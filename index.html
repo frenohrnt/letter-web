@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kakakku Sayang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#e8f1ff;
+color:#1d3557;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:linear-gradient(to bottom,#7aa6ff,#dfefff);
+position:relative;
+overflow:hidden;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:'Sacramento',cursive;
+color:white;
+text-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.hero p{
+margin-top:20px;
+max-width:600px;
+font-size:1.1rem;
+color:white;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:40px;
+background:white;
+color:#4f7cff;
+font-weight:600;
+cursor:pointer;
+font-size:1rem;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.flower{
+position:absolute;
+font-size:30px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) rotate(0deg);
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+}
+}
+
+.section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+font-family:'Sacramento',cursive;
+color:#4f7cff;
+}
+
+.letter{
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+line-height:2;
+font-size:1.05rem;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transform:rotate(-1deg);
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.03) rotate(0deg);
+}
+
+.card img{
+width:100%;
+border-radius:20px;
+height:350px;
+object-fit:cover;
+}
+
+.caption{
+padding:15px 5px;
+text-align:center;
+font-weight:600;
+color:#4f7cff;
+}
+
+.music{
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.footer{
+padding:60px 20px;
+text-align:center;
+font-size:1.2rem;
+color:#4f7cff;
+}
+
+.hearts{
+position:fixed;
+pointer-events:none;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:999;
+}
+
+.heart{
+position:absolute;
+color:#7aa6ff;
+animation:up 6s linear infinite;
+opacity:.7;
+}
+
+@keyframes up{
+0%{
+transform:translateY(100vh) scale(0);
+}
+100%{
+transform:translateY(-10vh) scale(1.5);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<section class="hero">
+<div class="flower" style="left:10%;animation-delay:0s;">🌸</div>
+<div class="flower" style="left:30%;animation-delay:2s;">🩵</div>
+<div class="flower" style="left:60%;animation-delay:4s;">🌼</div>
+<div class="flower" style="left:80%;animation-delay:1s;">✨</div>
+
+<h1>untuk kakakku sayang 💙</h1>
+
+<p>
+Terima kasih udah hadir dan jadi temen aku,
+jadi kakak terbaik yang selalu ada buat aku.
+</p>
+
+<button class="btn" onclick="document.getElementById('surprise').scrollIntoView()">
+Klik untuk memulai
+</button>
+</section>
+
+<section class="section" id="surprise">
+<h2 class="title">Surat kecil untuk kakak</h2>
+
+<div class="letter">
+Hai kakak 💙<br><br>
+
+Terima kasih ya kak, buat semua hal baik yang pernah kakak lakuin.
+Terima kasih udah jadi tempat pulang, tempat cerita, & tempat aman di saat aku butuh.<br><br>
+
+Kakak bukan cuman jadi panutan, tapi juga sahabat terbaik buat aku.
+Semoga kakak selalu bahagia, sehat, dan semua mimpi baik kakak satu per satu terwujud yaa.<br><br>
+
+lope kakak selamanya 🤍
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Beberapa foto favorit ✨</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="foto1.jpg">
+<div class="caption">senyum favorit akuhh 🤍</div>
+</div>
+
+<div class="card">
+<img src="foto2.jpg">
+<div class="caption">cantik bangettt 🌸</div>
+</div>
+
+<div class="card">
+<img src="foto3.jpg">
+<div class="caption">selalu bikin aku ketawa 😭</div>
+</div>
+
+<div class="card">
+<img src="foto4.jpg">
+<div class="caption">gemesss bangettt 🦖</div>
+</div>
+
+<div class="card">
+<img src="foto5.jpeg">
+<div class="caption">imuppp 🤩</div>
+</div>
+
+<div class="card">
+<img src="foto6.jpeg">
+<div class="caption">elegan bangett 🤭</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="music">
+<h2 style="margin-bottom:15px;color:#4f7cff;">🎵 Lagu untuk kakak</h2>
+
+<p style="margin-bottom:20px;">
+Risk It All — Bruno Mars
+</p>
+
+<audio controls loop preload="auto" style="width:100%; max-width:600px; outline:none;">
+<source src="Musik.mp3" type="audio/mpeg">
+Audio tidak didukung di browser ini.
+</audio>
+</div>
+</section>
+
+<div class="footer">
+terima kasih sudah jadi kakak terbaik 💙
+</div>
+
+<script>
+function createHeart(){
+const heart=document.createElement('div');
+heart.classList.add('heart');
+heart.innerHTML='💙';
+heart.style.left=Math.random()*100+'vw';
+heart.style.fontSize=(Math.random()*20+15)+'px';
+heart.style.animationDuration=(Math.random()*3+3)+'s';
+document.querySelector('.hearts').appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+
+setInterval(createHeart,300);
+</script>
+
+</body>
+</html>
